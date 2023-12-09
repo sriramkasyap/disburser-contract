@@ -3,9 +3,7 @@ import { MerkleTree } from 'merkletreejs';
 const { ALLOWANCE_MODULE } = require('../utils/constants');
 const AllowanceModule = require('../utils/AllowanceModule.json');
 const GnosisSafe = require('../utils/GnosisSafe.json');
-
 import { ZeroAddress, parseEther } from 'ethers';
-import { parse } from 'path';
 
 async function main() {
   const [deployer, recipient] = await ethers.getSigners();
