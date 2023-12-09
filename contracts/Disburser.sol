@@ -158,7 +158,7 @@ contract Disburser {
             amount,
             address(0),
             0,
-            recepient,
+            address(this),
             bytes("")
         );
     }
